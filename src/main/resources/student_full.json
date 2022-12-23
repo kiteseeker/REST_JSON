@@ -1,0 +1,18 @@
+{
+  "id": 1,
+  "firstName": "Derby",
+  "lastName": "Mosick",
+  "active": true,
+  "address": {
+    "street": "Kuprevicha 5-2",
+    "city": "Minsk",
+    "zip": "220084",
+    "country": "Belarus"
+  },
+  "languages": [
+    "Java",
+    "Python",
+    "C#"
+  ],
+  "company": "Apple"
+}
