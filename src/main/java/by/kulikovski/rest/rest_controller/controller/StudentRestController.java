@@ -50,7 +50,10 @@ public class StudentRestController {
     // send an exception as a JSON object StudentErrorResponse
     // ResponseEntity<?> is a Spring wrapper for HTTP response (proxy)
     // Can include various types of Objects into HTTP response
-    @ExceptionHandler
+
+    // method moved to StudentRestExceptionHandler
+
+    /*@ExceptionHandler
     private ResponseEntity<StudentErrorResponse> handleException(StudentNotFoundException e) {
         StudentErrorResponse errorResponse = new StudentErrorResponse();
 
@@ -59,10 +62,13 @@ public class StudentRestController {
         errorResponse.setTimeStamp(System.currentTimeMillis());
 
         return new ResponseEntity<>(errorResponse, HttpStatus.NOT_FOUND);
-    }
+    }*/
 
     // another exception to catch and handle all other types of exceptions (fi bad request etc.)
-    @ExceptionHandler
+
+    // method moved to StudentRestExceptionHandler
+
+    /*@ExceptionHandler
     private ResponseEntity<StudentErrorResponse> handleException(Exception e) {
         StudentErrorResponse errorResponse = new StudentErrorResponse();
 
@@ -71,5 +77,5 @@ public class StudentRestController {
         errorResponse.setTimeStamp(System.currentTimeMillis());
 
         return new ResponseEntity<>(errorResponse, HttpStatus.BAD_REQUEST);
-    }
+    }*/
 }
